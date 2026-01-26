@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASEEM PORNSTAR - Professional Services Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f0f1e;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: #ff6b9d;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, rgba(20, 20, 40, 0.95) 0%, rgba(40, 20, 60, 0.95) 100%);
+            padding: 20px 0;
+            box-shadow: 0 8px 32px rgba(255, 107, 157, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #ff6b9d;
+            backdrop-filter: blur(10px);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ff6b9d;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: slideInLeft 0.6s ease;
+        }
+
+        .logo i {
+            font-size: 36px;
+            text-shadow: 0 0 20px #ff6b9d;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e0e0e0;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ff6b9d, #ff1493);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b9d;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 800px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            animation: heroFade 20s infinite;
+            filter: brightness(0.5) saturate(1.3);
+        }
+
+        .hero-slider:nth-child(1) {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2vtEc22GjSCKZWpZ0eImpr0st62Z8lvT6eA&s');
+            animation-delay: 0s;
+        }
+
+        .hero-slider:nth-child(2) {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYsaYAnHsS50wSWF9HNVrDMllL5dw4l0lEw&s');
+            animation-delay: 5s;
+        }
+
+        .hero-slider:nth-child(3) {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjIoI_1tn4-ZqivGP0vS2sDVCC_v06sOiIYg&s');
+            animation-delay: 10s;
+        }
+
+        .hero-slider:nth-child(4) {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROpS2xHG2r7e8rd0sjdUOZD5JuDEy5kwYPRw&s');
+            animation-delay: 15s;
+        }
+
+        .hero-slider:nth-child(5) {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvA-vByfKm0RfPoAidJN8FhNGXj_De9rQScA&s');
+            animation-delay: 20s;
+        }
+
+        @keyframes heroFade {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            25% { opacity: 1; }
+            30% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            background: rgba(20, 20, 40, 0.85);
+            padding: 60px 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 107, 157, 0.3);
+            max-width: 700px;
+            animation: slideInUp 0.8s ease 0.3s both;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(255, 107, 157, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(255, 107, 157, 0.8);
+            }
+        }
+
+        .hero-content h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(255, 107, 157, 0.5);
+            letter-spacing: 2px;
+            animation: fadeInDown 0.8s ease 0.5s both;
+        }
+
+        .hero-content p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #ffb3d9;
+            animation: fadeInDown 0.8s ease 0.7s both;
+        }
+
+        .hero-content .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.9s both;
+        }
+
+        .cta-buttons a {
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cta-buttons .btn-primary {
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff1493 100%);
+            color: #fff;
+        }
+
+        .cta-buttons .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 157, 0.4);
+        }
+
+        .cta-buttons .btn-secondary {
+            background: rgba(255, 107, 157, 0.2);
+            border: 2px solid #ff6b9d;
+            color: #ff6b9d;
+        }
+
+        .cta-buttons .btn-secondary:hover {
+            background: rgba(255, 107, 157, 0.3);
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(20, 20, 40, 0.5) 0%, rgba(40, 20, 60, 0.5) 100%);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 107, 157, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 3.5em;
+            margin-bottom: 60px;
+            position: relative;
+            color: #ff6b9d;
+            text-shadow: 0 4px 20px rgba(255, 107, 157, 0.3);
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b9d 0%, #ff1493 100%);
+            border-radius: 2px;
+            box-shadow: 0 0 20px rgba(255, 107, 157, 0.5);
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffb3d9;
+        }
+
+        .about-text p {
+            font-size: 1.05em;
+            margin-bottom: 15px;
+            color: #c0c0c0;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            border: 3px solid #ff6b9d;
+            box-shadow: 0 20px 50px rgba(255, 107, 157, 0.3);
+            transition: all 0.3s ease;
+            animation: zoomIn 0.8s ease;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.1) 0%, rgba(255, 20, 147, 0.05) 100%);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid #ff6b9d;
+            text-align: center;
+            transition: all 0.3s ease;
+            animation: slideUp 0.6s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(255, 107, 157, 0.3);
+        }
+
+        .contact-card i {
+            font-size: 2.5em;
+            color: #ff6b9d;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+            color: #ffb3d9;
+        }
+
+        .contact-card p {
+            color: #c0c0c0;
+            margin: 10px 0;
+        }
+
+        .contact-card a {
+            color: #ff6b9d;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: #ff1493;
+            text-decoration: underline;
+        }
+
+        /* Location Map */
+        .map-container {
+            width: 100%;
+            height: 500px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #ff6b9d;
+            box-shadow: 0 20px 50px rgba(255, 107, 157, 0.3);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Pricing Section */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .pricing-card {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.15) 0%, rgba(255, 20, 147, 0.08) 100%);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid #ff6b9d;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            animation: slideUp 0.6s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: #ff1493;
+            box-shadow: 0 0 30px rgba(255, 20, 147, 0.4);
+            transform: scale(1.05);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(255, 107, 157, 0.3);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #ffb3d9;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5em;
+            color: #ff6b9d;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card .duration {
+            color: #c0c0c0;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .pricing-card ul li {
+            padding: 10px 0;
+            color: #c0c0c0;
+            border-bottom: 1px solid rgba(255, 107, 157, 0.2);
+        }
+
+        .pricing-card ul li::before {
+            content: '✓ ';
+            color: #ff6b9d;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .pricing-card .btn {
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff1493 100%);
+            color: #fff;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.05em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .pricing-card .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4);
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(255, 107, 157, 0.2);
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 107, 157, 0.3);
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 25px 60px rgba(255, 107, 157, 0.4);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            background: linear-gradient(135deg, #2a1a3a 0%, #3a1a4a 100%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery-caption h4 {
+            color: #ffb3d9;
+            margin-bottom: 5px;
+        }
+
+        .gallery-caption p {
+            color: #c0c0c0;
+            font-size: 0.9em;
+        }
+
+        /* Video Section */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .video-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(255, 107, 157, 0.2);
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 107, 157, 0.3);
+            animation: fadeIn 0.6s ease;
+        }
+
+        .video-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 25px 60px rgba(255, 107, 157, 0.4);
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 350px;
+            border: none;
+            display: block;
+        }
+
+        .video-caption {
+            background: linear-gradient(135deg, #2a1a3a 0%, #3a1a4a 100%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .video-caption h4 {
+            color: #ffb3d9;
+            margin-bottom: 5px;
+        }
+
+        .video-caption p {
+            color: #c0c0c0;
+            font-size: 0.9em;
+        }
+
+        /* Booking Times */
+        .booking-times {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .booking-card {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.1) 0%, rgba(255, 20, 147, 0.05) 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #ff6b9d;
+            animation: slideUp 0.6s ease;
+        }
+
+        .booking-card h3 {
+            color: #ffb3d9;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .booking-card p {
+            color: #c0c0c0;
+            margin: 10px 0;
+        }
+
+        .booking-card .time {
+            color: #ff6b9d;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        /* Floating Contact Buttons */
+        .floating-contact-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .floating-contact-buttons a {
+            display: flex;
+            width: 65px;
+            height: 65px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 28px;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse-glow 2s ease infinite;
+        }
+
+        .floating-contact-buttons a.whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128c7e 100%);
+        }
+
+        .floating-contact-buttons a.call {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        }
+
+        .floating-contact-buttons a.email {
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff1493 100%);
+        }
+
+        .floating-contact-buttons a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 12px 35px rgba(255, 107, 157, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0a0a15 0%, #1a0a25 100%);
+            color: #c0c0c0;
+            padding: 50px 0 20px;
+            border-top: 2px solid #ff6b9d;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        footer h4 {
+            color: #ff6b9d;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer ul li a {
+            color: #c0c0c0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        footer ul li a:hover {
+            color: #ff6b9d;
+            margin-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 107, 157, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                justify-content: center;
+            }
+
+            .hero-section {
+                height: 600px;
+            }
+
+            .hero-content {
+                padding: 40px 30px;
+                max-width: 90%;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-content p {
+                font-size: 1.1em;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .about-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            section h2 {
+                font-size: 2.5em;
+                margin-bottom: 40px;
+            }
+
+            .map-container {
+                height: 400px;
+            }
+
+            .floating-contact-buttons a {
+                width: 55px;
+                height: 55px;
+                font-size: 24px;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.8em;
+            }
+
+            .hero-content p {
+                font-size: 0.95em;
+            }
+
+            .hero-section {
+                height: 500px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            .contact-grid, .pricing-grid, .gallery-grid, .video-grid, .booking-times {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-contact-buttons a {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact-buttons">
+        <a href="https://wa.me/923066913354" target="_blank" class="whatsapp" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+92 306 6913354" class="call" title="Call">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="mailto:WASEEMPORNSTAR@example.com" class="email" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-crown"></i>
+                WASEEM PORNSTAR 
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#booking">Booking Times</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider"></div>
+        <div class="hero-slider"></div>
+        <div class="hero-slider"></div>
+        <div class="hero-slider"></div>
+        <div class="hero-slider"></div>
+
+        <div class="hero-content">
+            <h1>WASEEM PORNSTAR</h1>
+            <p>Premium Professional Services</p>
+            <p style="font-size: 0.95em; color: #c0c0c0;">Experience Excellence & Elegance</p>
+            <div class="cta-buttons">
+                <a href="#booking" class="btn-primary">
+                    <i class="fas fa-calendar-alt"></i> Book Now
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-phone"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About WASEEM PORNSTAR</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to Excellence</h3>
+                    <p>I am WASEEM PORNSTAR, dedicated to providing premium, professional, and memorable services. With years of experience and commitment to customer satisfaction, I ensure every interaction is exceptional.</p>
+                    <p>My services are designed with elegance, professionalism, and your complete satisfaction in mind. Whether you're looking for companionship, entertainment, or special occasions, I deliver premium experiences that exceed expectations.</p>
+                    <p>Available in multiple premium locations across the city, I'm ready to serve you with the highest standards of professionalism and discretion.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://scontent.flhe2-4.fna.fbcdn.net/v/t39.30808-6/465108721_592913466500929_4595652477524539067_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEAJzBVqQzs7Bdbljuz8okvZwxfMn9W4PZnDF8yf1bg9vdRqyTNtcq8Nf9yn3QZBb9dFW-oUeEaAQryuxj3JapR&_nc_ohc=32kEwP60O9gQ7kNvwG2cbfv&_nc_oc=Adks9BlATvwURZmOKGTr7Eq_L7z4a_PtGgwhDiVccyCUE_ycK200O3gvsaKV0MeXE2E&_nc_zt=23&_nc_ht=scontent.flhe2-4.fna&_nc_gid=cdB0zKQIB1ye_2pMawD9tA&oh=00_Afp3mzv3Wl1bjpEyYVsAswDuGj-jzpvsMXIUPMPi9t77Ng&oe=697DA3F2" alt="WASEEM PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Times Section -->
+    <section id="booking">
+        <div class="container">
+            <h2>Booking Times & Availability</h2>
+            <div class="booking-times">
+                <div class="booking-card">
+                    <h3><i class="fas fa-sun"></i> Morning</h3>
+                    <p class="time">8:00 AM - 12:00 PM</p>
+                    <p>Available for breakfast meets and morning sessions</p>
+                </div>
+                <div class="booking-card">
+                    <h3><i class="fas fa-cloud-sun"></i> Afternoon</h3>
+                    <p class="time">12:00 PM - 5:00 PM</p>
+                    <p>Lunch dates and afternoon entertainment</p>
+                </div>
+                <div class="booking-card">
+                    <h3><i class="fas fa-moon"></i> Evening</h3>
+                    <p class="time">5:00 PM - 12:00 AM</p>
+                    <p>Dinner, events, and evening companionship</p>
+                </div>
+                <div class="booking-card">
+                    <h3><i class="fas fa-star"></i> Overnight</h3>
+                    <p class="time">12:00 AM - 8:00 AM</p>
+                    <p>Full night bookings available on request</p>
+                </div>
+                <div class="booking-card">
+                    <h3><i class="fas fa-calendar-check"></i> Special Events</h3>
+                    <p class="time">Flexible Hours</p>
+                    <p>Customized bookings for parties and occasions</p>
+                </div>
+                <div class="booking-card">
+                    <h3><i class="fas fa-users"></i> Group Bookings</h3>
+                    <p class="time">By Appointment</p>
+                    <p>Multiple girls available for group events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing & Packages</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>One Hour</h3>
+                    <div class="price">5,000 PKR</div>
+                    <div class="duration">1 Hour Session</div>
+                    <ul>
+                        <li>Professional Service</li>
+                        <li>Premium Companionship</li>
+                        <li>Entertainment</li>
+                        <li>Discreet & Confidential</li>
+                    </ul>
+                    <button class="btn" onclick="bookNow()">Book Session</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Half Day</h3>
+                    <div class="price">12,000 PKR</div>
+                    <div class="duration">6 Hours</div>
+                    <ul>
+                        <li>Extended Companionship</li>
+                        <li>Multiple Activities</li>
+                        <li>Dining & Entertainment</li>
+                        <li>VIP Treatment</li>
+                    </ul>
+                    <button class="btn" onclick="bookNow()">Book Now</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Full Day</h3>
+                    <div class="price">20,000 PKR</div>
+                    <div class="duration">12 Hours</div>
+                    <ul>
+                        <li>Full Day Experience</li>
+                        <li>All Activities Included</li>
+                        <li>Meal & Transport</li>
+                        <li>Premium Experience</li>
+                    </ul>
+                    <button class="btn" onclick="bookNow()">Book Day</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>One Night</h3>
+                    <div class="price">25,000 PKR</div>
+                    <div class="duration">Overnight (12 hours)</div>
+                    <ul>
+                        <li>Full Night Stay</li>
+                        <li>Exclusive Time</li>
+                        <li>Premium Comfort</li>
+                        <li>Discretion Guaranteed</li>
+                    </ul>
+                    <button class="btn" onclick="bookNow()">Book Night</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Two Nights</h3>
+                    <div class="price">45,000 PKR</div>
+                    <div class="duration">2 Days & Nights</div>
+                    <ul>
+                        <li>Two Full Nights</li>
+                        <li>Extended Experience</li>
+                        <li>All Inclusive</li>
+                        <li>VIP Service</li>
+                    </ul>
+                    <button class="btn" onclick="bookNow()">Book 2 Nights</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Group Package</h3>
+                    <div class="price">Custom</div>
+                    <div class="duration">Flexible Duration</div>
+                    <ul>
+                        <li>Multiple Girls Available</li>
+                        <li>Party & Events</li>
+                        <li>Entertainment Package</li>
+                        <li>Special Rates</li>
+                    </ul>
+                    <button class="btn" onclick="bookNow()">Inquire Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact & Locations</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Quick Responses & Instant Booking</p>
+                    <a href="https://wa.me/923066913354" target="_blank">+92 306 6913354</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>Direct Phone Communication</p>
+                    <a href="tel:+92 306 6913354">+92 306 6913354</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>For Detailed Inquiries</p>
+                    <a href="mailto:WASEEM.services@example.com">WASEEM PORNSTAR.services@example.com</a>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 60px;">Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8416.963933846257!2d71.46694460559941!3d30.006777843074307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1769455627125!5m2!1sen!2s"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - WASEEM PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR Photos -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery - Meet Our Team</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://scontent.flhe2-4.fna.fbcdn.net/v/t39.30808-6/465108721_592913466500929_4595652477524539067_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEAJzBVqQzs7Bdbljuz8okvZwxfMn9W4PZnDF8yf1bg9vdRqyTNtcq8Nf9yn3QZBb9dFW-oUeEaAQryuxj3JapR&_nc_ohc=32kEwP60O9gQ7kNvwG2cbfv&_nc_oc=Adks9BlATvwURZmOKGTr7Eq_L7z4a_PtGgwhDiVccyCUE_ycK200O3gvsaKV0MeXE2E&_nc_zt=23&_nc_ht=scontent.flhe2-4.fna&_nc_gid=cdB0zKQIB1ye_2pMawD9tA&oh=00_Afp3mzv3Wl1bjpEyYVsAswDuGj-jzpvsMXIUPMPi9t77Ng&oe=697DA3F2" alt="WASEEM PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR PORNSTAR Professional">
+                    <div class="gallery-caption">
+                        <h4>WASEEM PORNSTAR </h4>
+                        <p>Professional Services Expert</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnnIxUrEWu9u7-xQAb8St9WNTzuHmLsOn9_A&s" alt="Gallery Photo 2">
+                    <div class="gallery-caption">
+                        <h4>Premium Service</h4>
+                        <p>Elegance & Style</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://pbs.twimg.com/amplify_video_thumb/1930186574416818176/img/D2mImr9DCb0uCh97.jpg" alt="Gallery Photo 3">
+                    <div class="gallery-caption">
+                        <h4>Professional Team</h4>
+                        <p>Quality Assurance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://www.sexrura.pl/wp-content/uploads/2025/01/intense-hardcore-fuck-with-european-exchange-student-cum-covered-by-huge-cock-vs-world-biggest-cock.jpg" alt="Gallery Photo 4">
+                    <div class="gallery-caption">
+                        <h4>Experience</h4>
+                        <p>Premium Entertainment</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGI4BpXXX8khI-jDi1n-x8p4QuUY8K-4M08Q&s" alt="Gallery Photo 5">
+                    <div class="gallery-caption">
+                        <h4>Sophisticated</h4>
+                        <p>High Class Service</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://scontent.flhe2-2.fna.fbcdn.net/v/t39.30808-6/480868530_667676942357914_1389887029714458264_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHWWUTkOxf2gNBPqMrbeC-9iNfB1xatGYqI18HXFq0ZipoyIVK10hls6JMOGNd6csERqbijcFUvKvP9CRLEjCV0&_nc_ohc=JM7K7ux-kKoQ7kNvwGI0mw_&_nc_oc=AdkjRB4Z_U7fNSLE16RHe5s4e0OZ-mqb9P2Qbv_4EVhhVfH_3pUrt9JFbqH6tv9QCJA&_nc_zt=23&_nc_ht=scontent.flhe2-2.fna&_nc_gid=39JMlW2PBZ8YVBUUfu4zxw&oh=00_AfqkVdT7YBRbtoPBNZFhykZwSFfK2kLzMG_Y9M6qvrTgTA&oe=697DAE9C" alt="Gallery Photo 6">
+                    <div class="gallery-caption">
+                        <h4>Professional</h4>
+                        <p>Exceptional Quality</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#booking">Booking Times</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#pricing">Hourly Booking</a></li>
+                    <li><a href="#pricing">Full Day</a></li>
+                    <li><a href="#pricing">Overnight Booking</a></li>
+                    <li><a href="#pricing">Group Events</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><a href="tel:+92 306 6913354">+92 306 6913354</a></li>
+                    <li><a href="https://wa.me/923056913354">WhatsApp: +92 306 6913354</a></li>
+                    <li><a href="mailto:WASEEM PORNSTAR .services@example.com">Email: WASEEM PORNSTAR.services@example.com</a></li>
+                </ul>
+            </div>
+           <div>
+    <h4>Follow Us</h4>
+    <ul>
+        <li>
+            <a href="https://web.facebook.com/profile.php?id=100073468436130" 
+               target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/wasiim_aslam?igsh=MTd1MXlobTU2dWhveg==" 
+               target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </li>
+        <li>
+            <a href="https://wa.me/" 
+               target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 WASEEM PORNSTAR Professional Services. All Rights Reserved. | Discretion & Privacy Guaranteed.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: false
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Book Now Function
+        function bookNow() {
+            const phone = '+923066913354';
+            const message = 'Hi WASEEM PORNSTAR , I would like to book your services. Please provide availability details.';
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
